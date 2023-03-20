@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="$(MSBuildThisFileDirectory)/Package.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <PackageId>Webinex.Coded.All</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Webinex.Coded.AspNetCore\Webinex.Coded.AspNetCore.csproj" />
+      <ProjectReference Include="..\Webinex.Coded\Webinex.Coded.csproj" />
+    </ItemGroup>
+
+</Project>

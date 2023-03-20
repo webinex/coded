@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="$(MSBuildThisFileDirectory)/../Webinex.Coded.All/Package.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Title>Webinex Coded</Title>
+        <Authors>Webinex Dev</Authors>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <LangVersion>8.0</LangVersion>
+        <Nullable>disable</Nullable>
+        <Description>Easy to use coded exception approach</Description>
+        <Copyright>Webinex Dev</Copyright>
+        <PackageId>Webinex.Coded</PackageId>
+        <PackageProjectUrl>https://github.com/webinex/starter-kit</PackageProjectUrl>
+        <License>https://github.com/webinex/starter-kit/LICENSE</License>
+        <RepositoryUrl>https://github.com/webinex/starter-kit</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="2.1.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    </ItemGroup>
+
+</Project>
